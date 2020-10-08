@@ -1,5 +1,5 @@
 from rest_framework import routers
-from .api import CategoryViewSet, PublisherViewSet, AuthorViewSet, BookViewSet
+from .views import CategoryViewSet, PublisherViewSet, AuthorViewSet, BookViewSet
 
 router = routers.DefaultRouter()
 router.register("api/category", CategoryViewSet, "category")
